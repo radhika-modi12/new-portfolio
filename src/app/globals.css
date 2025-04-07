@@ -34,3 +34,37 @@ body {
 padding: 10px;
 background-color: #333;
 color: white;}
+.about-data{
+  font-size: 20px;
+  font-weight: bolder;
+  color:blue
+}
+.about-container{
+  padding: 30px;
+  text-align: left;
+}
+.about-content{
+  margin-bottom:20px
+}
+.blog-detail{
+  padding:20px
+}
+.blog-container{
+  display: flex;
+  justify-content: space-between;
+  width:50%;
+  gap:15px;
+  /* border:1px solid black */
+}
+.blog-content{
+border: 1px solid black;
+width:50%;
+}
+
+.blog-btn{
+  padding: 3x;
+    border: 1px solid black;
+    background: blue;
+    color: white;
+    margin-left: 77px;
+}
