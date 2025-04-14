@@ -68,3 +68,42 @@ width:50%;
     color: white;
     margin-left: 77px;
 }
+.contact-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.contact-form label {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.form-body {
+  margin-top: 10px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.submit-btn{
+  margin-left: 40%;
+  border: 1px solid black;
+  background: blue;
+  color: white;
+  border-radius: 9px;
+  padding: 7px;
+  margin-top: 10px;
+  width: 20%;
+}

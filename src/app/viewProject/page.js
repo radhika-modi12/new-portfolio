@@ -1,12 +1,12 @@
 "use client"
-import { useSearchParams,useRouter } from "next/navigation";
+import { useSearchParams } from "next/navigation";
 export default function viewProject() {
     const searchParams = useSearchParams();
-    const tabKey = searchParams.get("slug");
+    const project_name = searchParams.get("detail");
     
     return (
       <div className="blog-detail">
-        <h1>My projects</h1>      
+        <h1>{project_name} project</h1>      
       </div>
     );
   }

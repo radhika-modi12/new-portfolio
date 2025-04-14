@@ -1,8 +1,10 @@
 "use client"
+import { useRouter } from "next/navigation"
 
-export default function Projects() {    
+export default function Projects() {  
+    const router = useRouter()  
     const handleViewBlog =(data) =>{
-console.log({data})
+        router.push(`/viewProject?detail=${data}`)
     }
     return(
         <div className="blog-detail">
