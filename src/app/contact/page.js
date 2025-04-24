@@ -37,15 +37,14 @@ export default function contact() {
             setErrors({})
         }        
     }
-    const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
-
+    // const [data] = useFetch("https://jsonplaceholder.typicode.com/todos");
     
     return(
         <>
-        {data &&
+        {/* {data &&
             data.map((item) => {
               return <p key={item.id}>{item.title}</p>;
-            })}
+            })} */}
     <div className="contact-container">
         <form className="contact-form">
         <label>Name</label>
