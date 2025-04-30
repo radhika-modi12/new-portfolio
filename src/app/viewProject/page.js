@@ -5,9 +5,12 @@ export default function viewProject() {
     const project_name = searchParams.get("detail");
     
     return (
-      <div className="blog-detail">
-        <h1>{project_name} project</h1>      
-      </div>
+      <section className="detail-section">
+        <h1 className="section-title">{project_name} Project</h1>
+        <div className="detail-content">
+          <p>Details about {project_name} will go here.</p>
+        </div>
+      </section>
     );
   }
   

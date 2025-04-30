@@ -1,7 +1,10 @@
 export default function viewBlog() {
-    return(
-        <div className="blog-detail">
-        <h1>blog 1</h1>
+    return (
+      <section className="detail-section">
+        <h1 className="section-title">Blog Details</h1>
+        <div className="detail-content">
+          <h2>Blog 1</h2>
         </div>
-    )
+      </section>
+    );
 }

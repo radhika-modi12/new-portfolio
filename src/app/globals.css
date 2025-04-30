@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* Removed Tailwind CSS import; using custom global styles */
 
 :root {
   --background: #ffffff;
@@ -34,6 +34,10 @@ body {
 padding: 10px;
 background-color: #333;
 color: white;}
+.flex-container a {
+  color: white;
+  text-decoration: none;
+}
 .about-data{
   font-size: 20px;
   font-weight: bolder;
@@ -106,4 +110,94 @@ width:50%;
   padding: 7px;
   margin-top: 10px;
   width: 20%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.home-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 0;
+}
+.hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--foreground);
+  margin-bottom: 2rem;
+}
+.hero-image {
+  border-radius: 50%;
+  border: 3px solid var(--foreground);
+}
+.projects-section {
+  padding: 4rem 0;
+}
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+}
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: var(--background);
+  transition: box-shadow 0.3s ease;
+}
+.project-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.project-card h2 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.project-card p {
+  color: var(--foreground);
+  margin-bottom: 1rem;
+}
+.project-card button {
+  border: none;
+  background: var(--foreground);
+  color: var(--background);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.project-card button:hover {
+  opacity: 0.9;
+}
+ .contact-section {
+  padding: 4rem 0;
+}
+.profile-section {
+  padding: 4rem 0;
+}
+.detail-section {
+  padding: 4rem 0;
+}
+.about-section {
+  padding: 4rem 0;
+}
+.detail-content {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--foreground);
+}
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  background: var(--foreground);
+  color: var(--background);
 }

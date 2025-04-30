@@ -7,20 +7,20 @@ export default function Projects() {
         router.push(`/viewProject?detail=${data}`)
     }
     return(
-        <div className="blog-detail">
-        <h1>project page</h1>
-        <div className="blog-container">
-            <div className="blog-content">
-                <h1 className="blog-title">blog1</h1>
-                <p className="blog-desc">blog description</p>
-                <button className="blog-btn" onClick={() =>{handleViewBlog("blog1")}}>view blog</button>
+        <section className="projects-section">
+        <h1 className="section-title">Projects</h1>
+        <div className="projects-grid">
+            <div className="project-card">
+                <h2 className="project-title">Project 1</h2>
+                <p className="project-desc">Project description goes here.</p>
+                <button onClick={() => handleViewBlog("project1")}>View Project</button>
             </div>
-            <div className="blog-content">
-                <h1 className="blog-title">blog 2</h1>
-                <p className="blog-desc">blog description</p>
-                <button className="blog-btn" onClick={() =>{handleViewBlog("blog2")}}>view blog</button>
+            <div className="project-card">
+                <h2 className="project-title">Project 2</h2>
+                <p className="project-desc">Project description goes here.</p>
+                <button onClick={() => handleViewBlog("project2")}>View Project</button>
             </div>
         </div>
-        </div>
+        </section>
     )
 }

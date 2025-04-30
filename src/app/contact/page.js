@@ -45,7 +45,9 @@ export default function contact() {
             data.map((item) => {
               return <p key={item.id}>{item.title}</p>;
             })} */}
-    <div className="contact-container">
+    <section className="contact-section">
+      <h1 className="section-title">Contact Me</h1>
+      <div className="contact-container">
         <form className="contact-form">
         <label>Name</label>
         <div className="form-body">
@@ -66,7 +68,8 @@ export default function contact() {
             <button type="button" className="submit-btn" onClick={handleSubmit}>Submit</button>
         </div>
         </form>
-    </div>
+      </div>
+    </section>
     </>
     )
 }
